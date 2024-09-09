@@ -1,0 +1,35 @@
+ /* Background gradient for the body */
+ body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #333;
+}
+/* Navbar styling */
+.navbar {
+    background-color: white;
+}
+.navbar .nav-link {
+    color: #555;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    background-color: #4facfe;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* Button animation */
+.btn-animate {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.btn-animate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* Token item image hover effect */
+.token-item img {
+    transition: transform 0.3s ease-in-out;
+}
+.token-item img:hover {
+    transform: rotate(10deg);
+}
