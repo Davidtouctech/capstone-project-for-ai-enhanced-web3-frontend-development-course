@@ -1,0 +1,159 @@
+<!DOCTYPE html> <!-- Defines document type and HTML version -->
+<html lang="en"> <!-- Sets the language of the page -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering on mobile devices -->
+    <title>Token Minter dApp</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="/globalstylesheet.css"> <!-- Link to external CSS file -->
+    <script src="/globalscript.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- A header section containing the title and navigation links -->
+        <h1>TOUCH TECH TOKEN MINTER DAPP</h1>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mint">Mint Tokens</a></li>
+                <li><a href="#about">About</a></li>
+           </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <p>This dApp allows users to mint their own tokens on the blockchain.</p>
+        </section>
+
+        <!-- Mint Section -->
+        <section id="mint">
+            <h2>Mint Your Token</h2>
+            <form action="#">
+                <div>
+                    <label for="tokenName" id="tokenFont">Token Name:</label><br>
+                    <input type="text" id="walletInput" placeholder="Enter token" name="tokenName">
+                </div>
+                <div>
+                    <label for="amount" id="tokenFont">Amount:</label><br>
+                    <input type="number" id="tokenInput" placeholder="Enter amount" name="amount">
+                </div>
+                <!-- <input type="submit" id="mintButton" value="Mint Token"> -->
+                <button id="mintButton">Mint Token</button>
+                <p id="totalMinted">Total Minted: 0</p>
+            </form>  
+        </section>
+
+        <section id="cryptoPrices">
+            <!-- Prices will be updated here by the JavaScript code -->
+            <h2>Retrieving Crypto prices...</h2>
+        </section> 
+
+        <section id="about">
+            <h2>About This dApp</h2>
+            <p>This dApp is a simple interface to mint custom tokens on the blockchain.</p>
+        </section>
+
+        <!-- Token List Section -->
+        <section>
+            <h2>Minted Tokens</h2>
+            <table border="1">
+                <tr>
+                    <th>Token Name</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Token A</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Token B</td>
+                    <td>200</td>
+                </tr>
+            </table>
+        </section>
+
+          <!-- Token Pricing Section -->
+          <section id="token-pricing">
+            <h2>Set Token Pricing</h2>
+            <form action="#">
+                <div>
+                    <label for="tokenPrice">Token Price (ETH):</label><br>
+                    <input type="number" id="tokenPrice" name="tokenPrice" step="0.01">
+                </div>
+                <input type="submit" value="Set Price">
+            </form>
+        </section>
+
+        <!-- Wallet Connection Section -->
+        <section id="wallet-connection">
+            <h2>Connect Your Wallet</h2>
+            <button id="connectWalletButton">Connect Wallet</button>
+        </section>
+
+        <!-- Token Gallery Section -->
+        <section id="token-gallery">
+            <h2>Token Gallery</h2>
+            <div class="gallery">
+                <div class="token-item">
+                    <img src="media/images/image1.png" alt="Token 1">
+                    <p>Token 1</p>
+                </div>
+                <div class="token-item">
+                    <img src="media/images/image2.png" alt="Token 2">
+                    <p>Token 2</p>
+                </div>
+                <!-- Add more tokens as needed -->
+            </div>
+        </section>
+
+        <!-- Transaction History Section -->
+        <section id="transaction-history">
+            <h2>Transaction History</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Token Name</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>2023-09-08</td>
+                    <td>Token A</td>
+                    <td>100</td>
+                    <td>Success</td>
+                </tr>
+                <!-- Add more transactions as needed -->
+            </table>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is this dApp?</h3>
+                <p>This dApp allows users to mint custom tokens on the blockchain.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I connect my wallet?</h3>
+                <p>You can connect your wallet using the "Connect Wallet" button above.</p>
+            </div>
+            <!-- Add more FAQs as needed -->
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us: <a href="mailto:hello@dProgrammingUniversity.com">hello@dProgrammingUniversity.com</a></p>
+        <p>For more information, visit 
+            <a href="https://dProgrammingUniversity.com/Discord" target="_blank" title="dPU Discord">
+                dProgramming University
+            </a>.
+        </p>
+    </footer>
+</body>
+</html>
