@@ -1,0 +1,362 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0553fe, #799ee7);
+    color: #333;
+}
+
+/* Header Section */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+} */
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* NAVIGATION */
+ 
+/* Styling navigation menu using child combinator */
+nav > ul > li {
+    display: inline;
+    margin-right: 20px;
+    text-align: center; /* Aligns text to the center */
+    /* Flex item styling for responsive nav items */
+    padding: 10px;
+    flex: 1; /* Allows each item to grow */
+}
+ 
+/* HYPERLINKS */
+ 
+/* Styling links using attribute selector */
+a[href^="#"] {
+    text-decoration: none;
+    color: #333;
+}
+ 
+/* HEADINGS */
+ 
+/* Styling for the header using element selector */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333; 
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+    align-items: center;
+    padding: 0 10px;
+}
+ 
+
+nav ul li a:hover {
+    background-color: #0553fe;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (min-width: 1042px) {
+    header {
+        flex-direction: row; /* Align items in a row for larger screens */
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: row; /* Align nav items horizontally */
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
+/* Main Content Section */
+main {
+    padding: 40px;
+}
+
+#home p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#about p {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Styling for token name and amount */
+#tokenFont {
+    color: #333;
+}
+
+
+/* Form Styles */
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+#mintButton {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#mintButton:hover {
+    background-color: #218838;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f8f9fa;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Token Pricing Section */
+#token-pricing form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#token-pricing label {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#token-pricing input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#token-pricing input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#token-pricing input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Wallet Connection Section */
+#wallet-connection {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#wallet-connection button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#wallet-connection button:hover {
+    background-color: #0056b3;
+}
+
+/* Crypto Prices section */
+
+#cryptoPrices {
+    color: #fff;
+}
+
+/* Token Gallery Section */
+#token-gallery {
+    margin-bottom: 40px;
+}
+
+#token-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#token-gallery .token-item {
+    text-align: center;
+}
+
+#token-gallery .token-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#token-gallery .token-item img:hover {
+    transform: scale(1.1);
+}
+
+.token-item img {
+   border: 5px;
+    padding: 60px;
+}
+
+.token-item p {
+    color: white;
+}
+
+/* Transaction History Section */
+#transaction-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#transaction-history th, #transaction-history td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#transaction-history th {
+    background-color: #f8f9fa;
+}
+
+#transaction-history tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* FAQ Section */
+#faq {
+    margin-bottom: 40px;
+}
+
+#faq .faq-item {
+    margin-bottom: 20px;
+}
+
+#faq .faq-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#faq .faq-item p {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header,
+main,
+footer {
+    animation: fadeIn 1s ease-in;
+}
+
+nav ul li a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="submit"] {
+    transition: background-color 0.3s ease;
+}
